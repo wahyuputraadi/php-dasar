@@ -34,15 +34,15 @@ $pangkat =  $a ** $b;
     <!-- versi variabel menggunakan concep '' -->
     <p>hasil dari <b>penjumlahan</b> <?= $a . '+' . $b . '=' . $penjumlahan; ?> </p>
     <hr>
-    <p>hasil dari <b>pengurangan</b> <?= $a ?> + <?= $b ?> = <?= $pengurangan ?> </p>
+    <p>hasil dari <b>pengurangan</b> <?= $a ?> - <?= $b ?> = <?= $pengurangan ?> </p>
     <hr>
-    <p>hasil dari <b>perkalian</b> <?= $a ?> + <?= $b ?> = <?= $perkalian ?> </p>
+    <p>hasil dari <b>perkalian</b> <?= $a ?> * <?= $b ?> = <?= $perkalian ?> </p>
     <hr>
-    <p>hasil dari <b>pembagian</b> <?= $a ?> + <?= $b ?> = <?= $pembagian ?> </p>
+    <p>hasil dari <b>pembagian</b> <?= $a ?> / <?= $b ?> = <?= $pembagian ?> </p>
     <hr>
-    <p>hasil dari <b>sisa_bagi</b> <?= $a ?> + <?= $b ?> = <?= $sisa_bagi ?> </p>
+    <p>hasil dari <b>sisa_bagi</b> <?= $a ?> % <?= $b ?> = <?= $sisa_bagi ?> </p>
     <hr>
-    <p>hasil dari <b>pangkat</b> <?= $a ?> + <?= $b ?> = <?= $pangkat ?> </p>
+    <p>hasil dari <b>pangkat</b> <?= $a ?> ** <?= $b ?> = <?= $pangkat ?> </p>
 
 
 </body>
