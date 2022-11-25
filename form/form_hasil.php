@@ -17,41 +17,45 @@
 <!-- Sesuaikan method yang dipakai dari form_input.php -->
 
 <?php
-
-// nilai panjang yang diterima dari form_input.php, sesuaikan methodnya dengan method form pengirim
+// Nilai panjang & lebar yang diterima dari function form_input.php, sesuaikan methodnya dengan method form pengirim
+// $VariabelDariFunction =  $_namaMethod['namaDariInputForm'];
 $panjang = $_POST['panjang'];
-// nilai lebar yang diterima dari form_input.php, sesuaikan methodnya dengan method form pengirim
 $lebar = $_POST['lebar'];
 
-// untuk luas kita menggunakan function luasPersegiPanjang($panjang * $lebar) yang ada di file function.php
-// masukkan file function.php ke dalam file yang membutuhkan
-// sesuaikan lokasi function
-// include '../1text.php'; => dll
+// untuk perhitungan luasnya, kita menggunakan function luasPersegiPanjang($panjang, $lebar) yg ada di file function.php
+// sesuaikan lokasi function = include '../1text.php'; => dll
 include 'function.php';
+// masukkan file function.php ke dalam file yg membutuhkan (form_hasil.php)
+// $namaVariabel = $VariabelDariFunction($namaVariabelDariFunction, $namaVariabelDariFunction );
 $luas = luasPersegiPanjang($panjang, $lebar);
 
 ?>
 
 <body>
-
+    <!-- Panggil & tampilkan menggunakan html -->
     <div class="container mt-5">
-        <table class="table table-bordered table-striped">
-            <tr>
-                <td>panjang</td>
-                <td>:</td>
-                <td><?php echo $panjang ?></td>
-            </tr>
-            <tr>
-                <td>lebar</td>
-                <td>:</td>
-                <td><?php echo $lebar ?></td>
-            </tr>
-            <tr>
-                <td>luas</td>
-                <td>:</td>
-                <td><?php echo $luas ?></td>
-            </tr>
-        </table>
+       <div class="row justify-content-center">
+        <div class="col-lg-6 ">
+            <h1>Hasil Penjumlahan</h1>
+            <table class="table table-bordered table-striped mt-3">
+                <tr>
+                    <td>Panjang</td>
+                    <td>:</td>
+                    <td><?php echo $panjang ?></td>
+                </tr>
+                <tr>
+                    <td>Lebar</td>
+                    <td>:</td>
+                    <td><?php echo $lebar ?></td>
+                </tr>
+                <tr>
+                    <td>Total luas</td>
+                    <td>:</td>
+                    <td><?php echo $luas ?></td>
+                </tr>
+            </table>
+        </div>
+       </div>
     </div>
 
 

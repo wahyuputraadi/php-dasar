@@ -1,27 +1,30 @@
 <?php
 
 // function luas persegi panjang
+// function namaFungction($namaVariabel)
 function luasPersegiPanjang($panjang, $lebar)
 {
+    // $namaVariabel yang akan direturn = $namaVariabel * namaVariabel;
     $luas = $panjang * $lebar;
+    // return $namaVariabel
     return $luas;
 }
 
 // function nilai UTS nilai UAS
-function nilaiRataRata($nilai_uts, $nilai_uas)
+function nilai_rata($nilai_uts, $nilai_uas)
 {
-    $nilai_RATARATA = ($nilai_uts + $nilai_uas) / 2;
+    $nilai_rata = ($nilai_uts + $nilai_uas) / 2;
 
-    if ($nilai_RATARATA >= 81 && $nilai_RATARATA <= 100) { // KONDISI jika nilainya lebih besar atau sama dengan 100 
+    if ($nilai_rata >= 81 && $nilai_rata <= 100) { /// Kondisi  81 - 100
         $keterangan = "A";
         $message = "Excelent";
-    } else if ($nilai_RATARATA >= 78 && $nilai_RATARATA <= 80.99) { // KONDISI rentang 90 - 99
+    } else if ($nilai_rata >= 78 && $nilai_rata <= 80.99) { // KONDISI  78 - 80.99
         $keterangan = "A-";
         $message = "Good";
-    } else if ($nilai_RATARATA >= 75 && $nilai_RATARATA <= 77.99) {
+    } else if ($nilai_rata >= 75 && $nilai_rata <= 77.99) {
         $keterangan = "B+";
         $message = "Not Bad";
-    } else if ($nilai_RATARATA < 75) {
+    } else if ($nilai_rata < 75) {
         $keterangan = "Tidak Lulus";
         $message = "Kepp Spirit";
     } else {
@@ -31,7 +34,7 @@ function nilaiRataRata($nilai_uts, $nilai_uas)
 
     // return $keterangan;
     $data = array(
-        'nilaiRata' => $nilai_RATARATA,
+        'nilaiRata' => $nilai_rata,
         'keterangan' => $keterangan,
         'message' => $message,
     );

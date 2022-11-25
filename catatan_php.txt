@@ -1,0 +1,2 @@
+1. membuat form
+buat dulu formnya => kemudian buat di function => 

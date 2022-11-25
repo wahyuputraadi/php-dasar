@@ -15,26 +15,29 @@
 
 <body>
     <div class="container mt-5">
-        <!-- kalo di form menggunakan action untuk berpindah kehalaman lain -->
-        <h1>Data Panjang x Lebar</h1>
-        <form action="form_hasil.php" method="post">
-            <div class="mt-3 mb-3">
-                <label for="formGroupExampleInput" class="form-label">Panjang</label>
-                <input type="number" name="panjang" class="form-control" id="formGroupExampleInput" placeholder="Masukkan Luas Panjang">
+       <div class="row justify-content-center">
+            <div class="col-lg-6 shadow p-5">
+                <!-- kalo di form menggunakan action untuk berpindah kehalaman lain, mengguanakan method post -->
+                <h1>Data Panjang x Lebar</h1>
+                <form action="form_hasil.php" method="post">
+                    <div class="mt-3 mb-3">
+                        <label for="formGroupExampleInput" class="form-label">Panjang</label>
+                        <!-- berikan name pada input -->
+                        <input type="number" name="panjang" class="form-control" id="formGroupExampleInput" placeholder="Masukkan Luas Panjang">
+                    </div>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput2" class="form-label">Lebar</label>
+                           <!-- berikan name pada input -->
+                        <input type="number" name="lebar" class="form-control" id="formGroupExampleInput2" placeholder="Masukkan Luas Lebar">
+                    </div>
+                    <div class="mb-3">
+                        <!-- ketika di submit maka dia akan ke form_hasil.php -->
+                        <button class="btn btn-success" type="submit">Proses</button>
+                    </div>
+                </form>
             </div>
-            <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label">Lebar</label>
-                <input type="number" name="lebar" class="form-control" id="formGroupExampleInput2" placeholder="Masukkan Luas Lebar">
-            </div>
-            <div class="mb-3">
-                <button class="btn btn-success" type="submit">Proses</button>
-            </div>
-        </form>
+       </div>
     </div>
-
-
-
-
 </body>
 
 </html>

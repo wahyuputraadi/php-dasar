@@ -26,7 +26,7 @@
     // sesuaikan lokasi function
     // include '../1text.php'; => dll
     include 'function.php';
-    $hasil = nilaiRataRata($nilai_uts, $nilai_uas);
+    $hasil = nilai_rata($nilai_uts, $nilai_uas);
 
     ?>
 </head>
