@@ -1,8 +1,8 @@
 <?php 
 
 class Mahasiswa{
-    public $keterangan = "";
-    public $message = "";
+    public $keterangan;
+    public $message;
     
     public function nilai($nilai_uts, $nilai_uas) {
 
@@ -39,7 +39,7 @@ class Mahasiswa{
 
 $mahasiwa1 = new Mahasiswa;
 PHP_EOL;
-$mahasiwa1->nilai(100, 90);
+$mahasiwa1->nilai(78,  80);
 PHP_EOL;
 
 
