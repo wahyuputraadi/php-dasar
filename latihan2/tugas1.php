@@ -2,7 +2,7 @@
 
 class Mahasiswa{
     public $keterangan;
-    public $message;
+    public $pesan;
     
     public function nilai($nilai_uts, $nilai_uas) {
 
@@ -10,29 +10,29 @@ class Mahasiswa{
 
         if ($nilai_mahasiswa >= 81 && $nilai_mahasiswa <= 100) { /// Kondisi  81 - 100
             $this->keterangan = "A";
-            $this->message = "Excelent";
+            $this->pesan = "Excelent";
             echo  $this->keterangan;
-            echo  $this->message;
+            echo  $this->pesan;
         } else if ($nilai_mahasiswa >= 78 && $nilai_mahasiswa <= 80.99) { // KONDISI  78 - 80.99
             $this->keterangan = "A-";
-            $this->message = "Good";
+            $this->pesan = "Good";
             echo  $this->keterangan;
-            echo  $this->message;
+            echo  $this->pesan;
         } else if ($nilai_mahasiswa >= 75 && $nilai_mahasiswa <= 77.99) {
             $this->keterangan = "B+";
-            $this->message = "Not Bad";
+            $this->pesan = "Not Bad";
             echo  $this->keterangan;
-            echo  $this->message;
+            echo  $this->pesan;
         } else if ($nilai_mahasiswa < 75) {
             $this->keterangan = "Tidak Lulus";
-            $this->message = "Kepp Spirit";
+            $this->pesan = "Kepp Spirit";
             echo  $this->keterangan;
-            echo  $this->message;
+            echo  $this->pesan;
         } else {
             $this->keterangan = "tidak terdefinisi";
-            $this->message = "Undefined";
+            $this->pesan = "Undefined";
             echo  $this->keterangan;
-            echo  $this->message;
+            echo  $this->pesan;
         }
     }
 }
