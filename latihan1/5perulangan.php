@@ -12,9 +12,10 @@
     <?php
     // looping FOR => perulangan yg diketahui nilai akhirnya
     /*
-        for($nilaiawal; $variabel <= $batasan; $variabel++ ){
+        for($nilaiawal; $variabel <= $batasan; $variabel++ )
+        {
             script menampilkan atau melakukan apa sebanyak perulangan yang disetting
-    }
+        }
     */
     // increment (menaik)
     for (
@@ -31,6 +32,26 @@
         $a--
     ) {
         echo "Hello - $a <br>";
+    }
+
+    // laptopseber ++
+    for (
+        $x230 = 10;
+        $laptop <= 100;
+        $laptop++
+    ) {
+        echo "laptop = $laptop <br>";
+    }
+
+    echo "<br>";
+
+    // laptopseber --
+    for (
+        $x230 = 100;
+        $laptop >= 10;
+        $laptop--
+    ) {
+        echo "laptop = $laptop <br>";
     }
 
     echo "<br>";
@@ -66,7 +87,6 @@
             lakukan apa yg ingin dilakukan sebanyak perulangan datanya
         }
     */
-
     foreach ($data1 as $dt1) {
         echo "$dt1 <br>";
     }

@@ -1,20 +1,3 @@
-<?php
-$title = "Latihan 3 (Operator)";
-// variabel
-$a = 7;
-$b = 3;
-
-//operator (kolaborasi dengan nama variabel)
-$a + $b;
-$penjumlahan = $a + $b;
-$pengurangan = $a - $b;
-$perkalian = $a * $b;
-$pembagian = $a / $b;
-$sisa_bagi = $a % $b;
-$pangkat =  $a ** $b;
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,6 +9,30 @@ $pangkat =  $a ** $b;
 </head>
 
 <body>
+    <?php
+    $title = "Latihan 3 (Operator)";
+    // variabel
+    $a = 7;
+    $b = 3;
+    // laptopseber
+    $modal_x230 = 1700000;
+    $keuntungan = 1000000;
+
+    //operator (kolaborasi dengan nama variabel)
+    $a + $b;
+    $penjumlahan = $a + $b;
+    $pengurangan = $a - $b;
+    $perkalian = $a * $b;
+    $pembagian = $a / $b;
+    $sisa_bagi = $a % $b;
+    $pangkat =  $a ** $b;
+
+    // laptopseber
+    $omset = $modal_x230 + $keuntungan;
+    echo $omset;
+
+    ?>
+
     <h1>Hasil dari Penjumlahan <?= $a ?> + <?= $b ?> </h1>
     <!-- versi variabel satu satu -->
     <p>hasil dari <b>penjumlahan</b> <?= $a ?> + <?= $b ?> = <?= $penjumlahan ?> </p>
@@ -43,6 +50,9 @@ $pangkat =  $a ** $b;
     <p>hasil dari <b>sisa_bagi</b> <?= $a ?> % <?= $b ?> = <?= $sisa_bagi ?> </p>
     <hr>
     <p>hasil dari <b>pangkat</b> <?= $a ?> ** <?= $b ?> = <?= $pangkat ?> </p>
+    <!-- laptop seber -->
+    <hr>
+    <p>jumlah omset laptopseber pada produk x230 adalah : <?= $omset ?></p>
 
 
 </body>

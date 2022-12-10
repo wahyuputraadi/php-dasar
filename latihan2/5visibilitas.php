@@ -1,7 +1,5 @@
 <?php
 
-use LaptopSeber as GlobalLaptopSeber;
-
 class PersegiPanjang
 {
     public $nilai = 50;
@@ -17,21 +15,20 @@ class PersegiPanjang
     }
 
     // akses atribut public getAlas
-    public function getAlas()
-    {
+    public function getAlas(){
         return $this->alas; //apabila dijalankan dengan return (saat menjalankan wajib echo)
     }
     // Akhir akses atribut public getAlas
 
 
     // akses atribut yang private AksesPrivate
-    private function aksesPrivate()
-    {
+    private function aksesPrivate() {
         echo "akses private berhasil"; //apabila dijalankan dengan echo (saat menjalankan tidak wajib echo)
     }
     function getAkses($akses) // buka dengan panggil dulu dengan public kemudian berikan kondisi
     {
-        if ($akses == 'admin123') {
+        if ($akses == 'admin123') 
+        {
             $this->aksesPrivate();
         } else {
             echo "akses gagal !";
@@ -48,22 +45,27 @@ class LaptopSeber{
     protected $distributor = 'technoca';
 
     // public
-    function total_harga(){ 
+    function total_harga()
+    { 
         $total_harga = $this->harga_laptop + $this->keuntungan_laptop;
         echo $total_harga;
     }
 
     // private
-    public function openModal(){
+    public function openModal()
+    {
         return $this->modal;
     }
 
     // private function
-    private function loginBerhasil(){
+    private function loginBerhasil()
+    {
         echo "Login Berhasil";
     }
-    public function getAkses($akses){
-        if($akses == "admin"){
+    public function getAkses($akses)
+    {
+        if($akses == "admin")
+        {
             echo $this->loginBerhasil();
         }else{
             echo "akses gagal !";
@@ -71,7 +73,8 @@ class LaptopSeber{
     }
 
     // protector
-    public function seller(){
+    public function seller()
+    {
         return $this->distributor;
     }
 }
@@ -99,9 +102,4 @@ echo PHP_EOL;
 $laptop->getAkses('admin123'); // akses private gagal
 echo PHP_EOL;
 echo $laptop->seller(); // akses protected distributor
-
-
-
-
-
 

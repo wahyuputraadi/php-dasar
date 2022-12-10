@@ -1,2 +1,9 @@
 1. membuat form
 buat dulu formnya => kemudian buat di function => 
+
+
+=====
+OOP
+1. pada oop class akan dijadikan satu dengan 1 folder
+2. pada form input jangan lupa berikan = name=""
+3. note comment ada pada = form/class/persegi.php 

@@ -6,21 +6,28 @@ class Mobil{
     public $sepion;
 
     // method / function
-    public function jalan(){
+    public function jalan()
+    {
         echo "mobil berjalan";
     }
 
-    public function move($move = 'stop'){
+    public function move($move = 'stop')
+    {
         // kondisi 
-        if($move == 'stop') {
+        if($move == 'stop') 
+        {
             echo "mobil stop";
-        }elseif ($move == 'maju'){
+        }elseif ($move == 'maju')
+        {
             echo "mobil melaju";
-        } elseif ($move == 'kanan') {
+        } elseif ($move == 'kanan')
+        {
             echo "mobil berbelok ke kanan";
-        }elseif ($move == 'kiri'){
+        }elseif ($move == 'kiri')
+        {
             echo "mobil berbelok ke kiri";
-        } elseif ($move == 'mundur'){
+        } elseif ($move == 'mundur')
+        {
             echo "mobil mundur";
         }else{
             echo "mobil tidak tau arah !";
@@ -38,11 +45,14 @@ class LaptopSeber {
 
     public function tipe_laptop($tipe_laptop = 'lenovo') 
     {
-        if($tipe_laptop == 'lenovo'){
+        if($tipe_laptop == 'lenovo')
+        {
             echo "Kami Ready Seri Lenovo Thinkpad seri X T L E";
-        }elseif ($tipe_laptop == 'dell'){
+        }elseif ($tipe_laptop == 'dell')
+        {
             echo "Kami Ready Seri Dell e7470";
-        }elseif ($tipe_laptop == 'macbook'){
+        }elseif ($tipe_laptop == 'macbook')
+        {
             echo "Kami Ready Macbook Pro Retina 2017";
         }else{
             echo "Maaf, Kami tidak menjual laptop yang anda cari !";
@@ -71,11 +81,6 @@ echo PHP_EOL;
 $laptop->tipe_laptop('dell'); // menampilkan data sesuai yang dicari
 echo PHP_EOL;
 $laptop->tipe_laptop('asus'); // menampilkan data yang tidak ada
-
-
-
-
-
 
 //panggil method / property dari class mobil
 

@@ -8,7 +8,11 @@ echo "Synapse Academy batch 14";
 echo "<br>";
 echo "Tempatnya Curhat Masalah Koding";
 echo "<hr>";
+echo "Laptop Seber";
+echo "<hr>";
 
     // echo "";
     // echo ""; comment multi line sekaligus
     // echo "";
+
+

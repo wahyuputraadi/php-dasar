@@ -9,11 +9,23 @@
 </head>
 
 <body>
-
     <?php
     $nilai_UTS = 100;
     $nilai_UAS = 120;
     $nilai_RATARATA = ($nilai_UTS + $nilai_UAS) / 2;
+
+    // laptopseber
+    $t450 = 2900000;
+    $t440 = 2800000;
+    $harga_jual = 4500000;
+    $rata_keuntungan = ($harga_jual - $t450) ;
+
+    if ($rata_keuntungan == 1600000 ) 
+    {
+        $hasil = "keuntungan kamu adalah Rp 1.600.000" ;
+    } else {
+       $hasil = "semangat cari cuan";
+    }
 
     // percabangan 2 kondisi
     if ($nilai_RATARATA == 100) {
@@ -29,14 +41,13 @@
     }
 
     // Percabangan 3 kondisi
-    if ($nilai_RATARATA >= 100) { // KONDISI jika nilainya lebih besar atau sama dengan 100 
+    if ($nilai_RATARATA >= 100){ // KONDISI jika nilainya lebih besar atau sama dengan 100 
         $keterangan2 = "KET 2 : LULUS"; // Ngapain
     } else if ($nilai_RATARATA >= 90 && $nilai_RATARATA <= 99) { // KONDISI rentang 90 - 99
         $keterangan2 = "KET 2 : RATA-RATA"; // Ngapain
     } else { // Kondisi terakhir ketika tidak memenuhi persyaratan sebelumnya
         $keterangan2 = "KET 2 : TIDAK LULUS";
     }
-
 
     // login
     $username = "Sydemy";
@@ -63,6 +74,7 @@
     <p>Keterangan 2 : <?= $keterangan2; ?></p>
     <p>Apakah Password Benar ? <?= $success ?></p>
     <p>print data : <?= $valid ?></p>
+    <p>keuntungan t450 : <?= $hasil ?></p>
 
 </body>
 

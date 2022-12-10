@@ -1,13 +1,12 @@
 <?php
 
-use LaptopSeber as GlobalLaptopSeber;
-
     class Singa {
         // atribut yang bersifat static 
         public static $kaki = 4;
 
         // method yang bersifat static
-        public static function lari() {
+        public static function lari() 
+        {
             echo "Singa Berlari"; //apabila dijalankan dengan echo (saat menjalankan tidak wajib echo)
         }
 
@@ -17,7 +16,8 @@ use LaptopSeber as GlobalLaptopSeber;
     class LaptopSeber{
         public static $tipe_laptop = 'Lenovo Thinkpad';
 
-        public static function about(){
+        public static function about()
+        {
             echo "laptop seber adalah laptop seken berkualitas";
         }
     }
